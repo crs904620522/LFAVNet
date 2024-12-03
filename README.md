@@ -25,6 +25,10 @@ conda activate LFAVNet
 
 Light Field Dataset: We use [HCI 4D Light Field Dataset](https://lightfield-analysis.uni-konstanz.de/) for training and test. Please first download light field dataset with its full-view depth information, and put them into corresponding folders in ***data/HCInew***.
 
+##### Model weights: 
+Please download the model weights from [Google Drive](https://drive.google.com/file/d/1lhDqVPa-QnpK_wX9oN2HPBkaVdmPzsOv/view?usp=sharing), and put them in the ***out/LFAVNet/HCInew***.
+
+
 ##### To train, run:
 
 ```
