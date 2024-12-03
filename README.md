@@ -1,6 +1,7 @@
 # LFAVNet
 
 ###### *PyTorch implementation of TVCG paper: "View-guided Cost Volume for Light Field Arbitrary-view Disparity Estimation"*.
+![LFAVNet](./LFAVNet.gif)
 
 #### Requirements
 
@@ -48,8 +49,3 @@ python generate.py --config configs/pretrained/HCInew/LFAVNet_pretrained.yaml
 }
 ```
 
-
-
-![LFAVNet](./LFAVNet.gif)
-
-# We are organizing the code and will make it public when it is completed.
