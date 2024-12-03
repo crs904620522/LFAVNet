@@ -38,7 +38,7 @@ python generate.py --config configs/pretrained/HCInew/LFAVNet_pretrained.yaml
 
 
 **If you find our code or paper useful, please consider citing:**
-'''
+```
 @article{chen2024view,
   title={View-guided Cost Volume for Light Field Arbitrary-view Disparity Estimation},
   author={Chen, Rongshan and Sheng, Hao and Yang, Da and Wang, Sizhe and Cui, Zhenglong and Cong, Ruixuan and Wang, Shuai},
@@ -46,7 +46,7 @@ python generate.py --config configs/pretrained/HCInew/LFAVNet_pretrained.yaml
   year={2024},
   publisher={IEEE}
 }
-'''
+```
 
 
 
