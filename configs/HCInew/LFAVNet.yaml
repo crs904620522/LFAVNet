@@ -1,0 +1,38 @@
+method: LFAVNet
+GPU_ID: '2'
+LFAVNet:
+  input_dim: 1
+data:
+  dataset: 'HCInew'
+  path: './data/HCInew'
+  views: 9 
+training:
+  out_dir: './out/LFAVNet/HCInew'
+  loss: 'MAEL1'
+  mode: 'coarse'
+  batch_size: 4
+  image_batch_size: 4
+  input_size: 48
+  augmentation: True 
+  transform: False     
+  model_selection_metric: 'minimize'
+  val_metric: 'mse'
+  print_every: 5
+  checkpoint_every: 2000
+  validate_every: 2000
+  visualize_every: 2000
+  backup_every: 2000
+test:
+  test_dir: './out/LFAVNet/HCInew/test_dir'
+  batch_size: 1
+  image_batch_size: 1
+  input_size: 512
+  transform: False
+  guide_view: 40
+vis:
+  vis_dir: '/data/crs/LFdepth/LFModel/SCamsNet/out/LFAVNet/HCInew/val_dir'
+  batch_size: 1
+  image_batch_size: 1
+  input_size: 512
+  transform: False
+  guide_view: 40
