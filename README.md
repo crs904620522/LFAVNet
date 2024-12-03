@@ -27,7 +27,9 @@ Light Field Dataset: We use [HCI 4D Light Field Dataset](https://lightfield-anal
 
 ##### Model weights: 
 Please download the model weights from [Google Drive](https://drive.google.com/file/d/1lhDqVPa-QnpK_wX9oN2HPBkaVdmPzsOv/view?usp=sharing), and put them in the ***out/LFAVNet/HCInew***.
-(We cleaned up the code and retrained our model, so the metrics are slightly different from we reported.)
+
+(We have cleaned up the code and retrained our model, so the metrics are slightly different from we reported.)
+
 ##### Results:
 We also provide depth estimation results for the LF [center view](XX) and [full view](XX).
 
