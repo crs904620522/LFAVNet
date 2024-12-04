@@ -258,7 +258,7 @@ class QueryKeyValue(nn.Module):
         self.value = nn.Conv3d(input_dims, n_dims, kernel_size=1)
         # position
         self.position_embeding = nn.Conv2d(in_channels=2,out_channels=c_dim,kernel_size=1)
-        self.cbn = CBatchNorm2d(c_dim=c_dim, f_dim=n_dims * n_views ** 2)  # 位置信息
+        self.cbn = CBatchNorm2d(c_dim=c_dim, f_dim=n_dims * n_views ** 2)
         # output
         self.last = nn.Conv2d(n_dims * n_views ** 2, self.output_dims, kernel_size=1)
 
@@ -328,7 +328,7 @@ class Net(nn.Module):
                 tmp_list = list()
                 for i in range(len(view_list)):
                     (v, u) = divmod(i, M)
-                    rate = [2 * d * (u - guide_u) / W, 2 * d * (v - guide_v) / H]  # 这个只和对齐操作有关，没关系的
+                    rate = [2 * d * (u - guide_u) / W, 2 * d * (v - guide_v) / H]
                     theta = torch.tensor([[1, 0, rate[0]], [0, 1, rate[1]]], dtype=float).to(self.device)
                     grid = F.affine_grid(theta.unsqueeze(0).repeat(B, 1, 1), view_list[i].size()).type_as(view_list[i])
                     temp = F.grid_sample(view_list[i], grid)
