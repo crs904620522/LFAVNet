@@ -31,7 +31,7 @@ Please download the model weights from [Google Drive](https://drive.google.com/f
 (We have cleaned up the code and retrained our model, so the metrics are slightly different from what we reported.)
 
 ##### Results:
-We also provide depth estimation results for the LF [center view](https://drive.google.com/file/d/1isMNCY1tWptFIJcYekTpj6bZs4oBGtv4/view?usp=sharing) and [full view](XX).
+We also provide depth estimation results for the LF [center view](https://drive.google.com/file/d/1isMNCY1tWptFIJcYekTpj6bZs4oBGtv4/view?usp=sharing) and [full view](https://drive.google.com/file/d/1PM_N_VOHChyn9M2HS-OZneRDuQULwlNW/view?usp=sharing).
 
 ##### To train, run:
 
